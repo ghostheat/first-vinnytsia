@@ -454,6 +454,10 @@ html {
     @media (max-width: 768px) {
 max-height: 440px;
     }
+
+    @media (max-width: 480px) {
+      max-height: 320px;
+          }
   }
 }
 
@@ -729,6 +733,10 @@ padding: 50px 0;
     position: relative;
     margin-bottom: 20px;
 
+    img {
+      max-height: 338px;
+    }
+
     @media (max-width: 880px) {
       img {
         max-height: 500px;
@@ -749,6 +757,7 @@ padding: 50px 0;
 
   &__item {
     text-align: center;
+    color: #fff;
     h4 {
       font-size: 16px;
       font-weight: bold;

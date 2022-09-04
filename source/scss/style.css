@@ -651,6 +651,11 @@ html {
     max-height: 440px;
   }
 }
+@media (max-width: 480px) {
+  .modal__slider img {
+    max-height: 320px;
+  }
+}
 
 .modal__slider.owl-carousel.owl-loaded {
   max-width: 560px;
@@ -927,6 +932,9 @@ html {
   position: relative;
   margin-bottom: 20px;
 }
+.plan__image img {
+  max-height: 338px;
+}
 @media (max-width: 880px) {
   .plan__image img {
     max-height: 500px;
@@ -944,6 +952,7 @@ html {
 }
 .plan__item {
   text-align: center;
+  color: #fff;
 }
 .plan__item h4 {
   font-size: 16px;
