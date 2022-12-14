@@ -59,8 +59,12 @@ $(document).ready(function () {
 document.addEventListener('scroll', function (e) {
   if (window.pageYOffset > 150) {
     document.documentElement.style.setProperty('--opacity', 0.5);
+    document.documentElement.style.setProperty('--logo-height', "100px");
+    document.documentElement.style.setProperty('--logo-width', "80px");
   } else {
-    document.documentElement.style.setProperty('--opacity', 1);
+    document.documentElement.style.setProperty('--opacity', 0);
+    document.documentElement.style.setProperty('--logo-height', "141px");
+    document.documentElement.style.setProperty('--logo-width', "113px");
   }
 });
 
