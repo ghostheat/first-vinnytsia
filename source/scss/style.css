@@ -456,7 +456,7 @@ html {
 .banner {
   position: relative;
   text-align: center;
-  background: url("/img/main_bg.png") center/cover no-repeat;
+  background: url("../../img/main_bg.png") center/cover no-repeat;
   color: #fff;
   height: 100vh;
   display: flex;
