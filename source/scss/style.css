@@ -353,7 +353,7 @@ html {
 }
 
 :root {
-  --opacity: 1;
+  --opacity: 0;
 }
 
 .header {
