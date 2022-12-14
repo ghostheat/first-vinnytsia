@@ -366,8 +366,8 @@ html {
   z-index: 100;
 }
 .header__burger {
-  width: 47px;
-  height: 41px;
+  width: 30px;
+  height: 30px;
   position: relative;
   z-index: 10;
   display: block;
