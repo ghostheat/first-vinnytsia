@@ -32,11 +32,11 @@ $(document).ready(function () {
 
 
   $(".owl-carousel").owlCarousel({
-
-
-    items: 3,
-    dotsEach: true,
+    items: 1.5,
+    dotsEach: false,
+    dots: false,
     autoplay: true,
+    nav: true,
     smartSpeed: 900,
     rewind: true,
     autoplayHoverPause: true,
@@ -48,7 +48,7 @@ $(document).ready(function () {
         items: 1 // от 0px до 599px слайдов нет
       },
       1100: {
-        items: 3 // от 900px до 1199px два слайда
+        items: 1.5 // от 900px до 1199px два слайда
       },
     }
   });
