@@ -334,7 +334,7 @@ html {
 }
 
 :root {
-  --opacity: 1;
+  --opacity: 0;
 }
 
 .header {
@@ -457,12 +457,74 @@ html {
     font-size: 14px;
   }
 }
-.banner .arrow {
+.banner .arrows {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  bottom: 50px;
-  color: #ffffff;
+  bottom: -30px;
+}
+.banner .arrows span {
+  display: block;
+  padding-bottom: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.banner body {
+  background: #222;
+}
+.banner .arrow {
+  opacity: 0;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(30px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+.banner .arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+.banner .arrow:before,
+.banner .arrow:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+.banner .arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+.banner .arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+    transform: translateX(0%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .banner .controller {
   height: 12px;
