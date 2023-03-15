@@ -692,6 +692,7 @@ html {
       .type-text {
         font-family: Roboto;
         font-size: 24px;
+        font-weight: 300;
       }
     }
     .square {
@@ -853,10 +854,12 @@ html {
   flex-direction: column;
   justify-content: center;
 
+
   &__body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -878,6 +881,7 @@ html {
 
   &__contact {
     padding: 90px;
+    padding-left: 0;
 
     @media (max-width: 1000px) {
       padding: 20px;

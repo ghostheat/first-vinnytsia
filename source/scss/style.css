@@ -856,6 +856,7 @@ html {
 .plan__text-title .type-text {
   font-family: Roboto;
   font-size: 24px;
+  font-weight: 300;
 }
 .plan__text .square {
   padding-top: 20px;
@@ -951,6 +952,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 @media (max-width: 1000px) {
   .footer__body {
@@ -971,6 +973,7 @@ html {
 }
 .footer__contact {
   padding: 90px;
+  padding-left: 0;
 }
 @media (max-width: 1000px) {
   .footer__contact {
