@@ -1,31 +1,7 @@
 @import "nullstyle";
 @import "nice-select-prefixed";
-
-@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Regular.ttf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Light.ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Grotesko";
-  src: url("../../fonts/BodyGrotesque-FitRegular.ttf");
-  font-weight: 500;
-}
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
 
 .modal {
   display: none;
@@ -130,6 +106,7 @@ html {
 }
 
 .header {
+  font-family: Cormorant;
   transition: 0.3s;
   background: rgba(41, 49, 51, var(--opacity));
   position: fixed;
@@ -144,25 +121,24 @@ html {
     position: relative;
     z-index: 10;
     display: block;
-
-    span {
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: #fff;
-      margin: 5px 0;
-      border-radius: 7px;
-    }
   }
 
-  .header__burger::after,
-  .header__burger::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 7px;
+  &__logo {
+    margin-bottom: 50px;
+  }
+
+  .menu__active {
+    display: none;
+  }
+
+  .header__burger.active {
+    .default {
+      display: none;
+    }
+
+    .menu__active {
+      display: block;
+    }
   }
 
   a {
@@ -189,7 +165,7 @@ html {
     padding: 15px;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    background-color: rgb(41, 49, 51);
+    background: rgba(0, 0, 0, 0.85);
 
     &.active {
       transform: translateX(0);
@@ -210,20 +186,25 @@ html {
     }
 
     li {
+      display: inline-block;
       margin: 0 15px;
       text-transform: uppercase;
       transition: 0.3s;
       padding-bottom: 3px;
       border-bottom: 2px solid transparent;
-      font-size: 18px;
+      font-size: 48px;
+      line-height: 1.2;
       font-weight: bold;
+      margin-bottom: 27px;
 
-      margin-bottom: 15px;
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
 
       &:hover {
-        border-bottom: 2px solid #ebc181;
         a {
           color: #ebc181;
+          border-bottom: 2px solid #ebc181;
         }
       }
     }
@@ -232,7 +213,13 @@ html {
   &__contact {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-family: Sen;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -846,6 +833,97 @@ html {
 //   }
 // }
 
+.plus {
+  background: url("../../img/plus_bg.png") center/cover no-repeat;
+  height: 1024px;
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: 860px;
+    max-width: 860px;
+    background: rgba(218, 217, 217, 0.57);
+    padding: 77px 80px 40px 80px;
+
+    @media (max-width: 555px) {
+      padding: 30px;
+    }
+
+    @media (max-width: 400px) {
+      padding: 18px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    @media (max-width: 725px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-family: "Cormorant";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+
+    }
+  }
+
+  .none-desktop {
+    display: none;
+
+    @media (max-width: 725px) {
+      display: flex;
+    }
+  }
+
+  .plus__block .plus__item:nth-child(2) {
+    h3 {
+      max-width: 160px;
+    }
+
+  }
+
+  .plus__item:nth-child(4) {
+    h3 {
+      max-width: 131px;
+    }
+
+  }
+
+  .plus__block {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    
+    @media (max-width: 725px) {
+      display: none;
+    }
+
+    .plus__item {
+      width: 160px;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .footer {
   background: url("../../img/footer_bg.png") center/cover no-repeat;
   height: 1024px;
@@ -853,7 +931,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 
   &__body {
     display: flex;
