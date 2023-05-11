@@ -41,6 +41,7 @@
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   padding: 40px;
+  font-family: 'Playfair Display';
 
   @media (max-width: 1114px) {
     flex-direction: column;
@@ -237,7 +238,7 @@ html {
   &__contact {
     display: flex;
     align-items: center;
-    font-size: 48px;
+    font-size: 28px;
     margin-bottom: 15px;
     font-family: Sen;
 
@@ -285,6 +286,7 @@ html {
     bottom: -30px;
 
     span {
+      font-family: Nunito;
       display: block;
       padding-bottom: 70px;
       text-align: center;
@@ -503,6 +505,7 @@ html {
   }
 
   &__text {
+    letter-spacing: 1px;
     margin-left: 30px;
     text-align: left;
 
@@ -539,6 +542,7 @@ html {
     position: relative;
   }
   &__title {
+    font-family: 'Nunito';
     font-weight: 400;
     font-size: 42px;
     line-height: 51px;
@@ -556,6 +560,7 @@ html {
   }
 
   &__text {
+    font-family: 'Nunito';
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -563,7 +568,7 @@ html {
     color: #ffffff;
     padding-left: 80px;
     padding-right: 80px;
-    max-width: 1260px;
+    max-width: 1043px;
     margin-bottom: 40px;
 
     @media (max-width: 768px) {
@@ -968,7 +973,6 @@ html {
 
   &__body {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 30px;
 
@@ -991,7 +995,7 @@ html {
   }
 
   &__contact {
-    padding: 90px;
+    padding: 50px;
     padding-left: 0;
 
     @media (max-width: 1000px) {
@@ -1060,6 +1064,14 @@ html {
 .footer__icons {
   display: flex;
   gap: 20px;
+
+  img {
+    max-width: 50px;
+  }
+}
+
+.footer__title {
+  font-family: 'Nunito';
 }
 
 .thumb-wrap {
