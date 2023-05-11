@@ -412,13 +412,12 @@ html {
 .header__menu li {
   display: inline-block;
   margin: 0 15px;
-  text-transform: uppercase;
   transition: 0.3s;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
   font-size: 48px;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 27px;
 }
 @media (max-width: 768px) {
