@@ -2,6 +2,8 @@
 @import "nice-select-prefixed";
 @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 
 .modal {
   display: none;
@@ -95,6 +97,10 @@ html {
   overflow: auto !important;
 }
 
+.header__logo-menu {
+  margin-bottom: 40px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -103,6 +109,15 @@ html {
 
 :root {
   --opacity: 0;
+}
+
+.header__menu-wrap {
+  padding: 40px 0;
+
+  @media (max-width: 550px) {
+    padding: 20px 0;
+
+  }
 }
 
 .header {
@@ -114,6 +129,7 @@ html {
   left: 0;
   width: 100%;
   z-index: 100;
+  min-height: 70px;
 
   &__burger {
     width: 47px;
@@ -124,7 +140,16 @@ html {
   }
 
   &__logo {
-    margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 550px) {
+      img {
+        max-height: 80px;
+        max-width: 70px;
+      }
+
+    }
   }
 
   .menu__active {
@@ -235,14 +260,18 @@ html {
   h1 {
     font-size: 72px;
     margin-bottom: 35px;
-    font-family: "Grotesko";
+    font-family: "Cormorant";
+    max-width: 800px;
 
     @media (max-width: 768px) {
       font-size: 30px;
     }
+
+    span {
+      font-family: 'Playfair Display';
+    }
   }
   h2 {
-    font-family: "Grotesko";
     font-size: 22px;
 
     @media (max-width: 768px) {
@@ -504,6 +533,7 @@ html {
 }
 
 .render {
+  font-family: Sen;
   padding: 70px 0;
   background: url("../../img/render_bg.png") center/cover no-repeat;
   .owl-carousel {
@@ -674,12 +704,17 @@ html {
         font-family: "Bentham", serif;
         font-size: 120px;
         font-weight: 400;
+
+        @media (max-width: 550px) {
+          font-size: 70px;
+        }
       }
 
       .type-text {
         font-family: Roboto;
         font-size: 24px;
         font-weight: 300;
+        margin-left: 10px;
       }
     }
     .square {
@@ -1021,6 +1056,11 @@ html {
   @media (max-width: 1000px) {
     height: 700px;
   }
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20px;
 }
 
 .thumb-wrap {
