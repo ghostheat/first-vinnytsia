@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -876,16 +877,16 @@ html {
   }
 }
 .plan__text-title .type-text {
-  font-family: Roboto;
+  font-family: "Nunito", sans-serif;
   font-size: 24px;
   font-weight: 300;
   margin-left: 10px;
 }
 .plan__text .square {
+  font-family: "Nunito", sans-serif;
   padding-top: 20px;
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: 200;
+  font-size: 18px;
 }
 .plan__item {
   text-align: center;
