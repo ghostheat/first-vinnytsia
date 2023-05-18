@@ -576,6 +576,18 @@ html {
   }
 }
 
+.plan__image img {
+  transition: 0.4s;
+}
+
+.plan__image:hover img {
+  scale: 1.1;
+}
+
+.plan__item:hover {
+  opacity: 1.1;
+}
+
 .main__subtitle {
   max-width: 560px;
   margin: 0 auto 105px auto;
@@ -593,7 +605,7 @@ html {
 
 .modal__slider img {
   max-width: 560px;
-  max-height: 560px;
+  max-height: 380px;
 }
 @media (max-width: 768px) {
   .modal__slider img {
