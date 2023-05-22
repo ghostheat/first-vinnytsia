@@ -7,7 +7,7 @@ $(document).ready(function () {
     dotsEach: true,
     nav: true,
     dots: true,
-    rewind: true,
+    rewind: true,  
     responsiveClass: true,
     smartSpeed: 900,
   });
@@ -55,7 +55,7 @@ $(document).ready(function () {
 
 document.addEventListener('scroll', function (e) {
   if (window.pageYOffset > 150) {
-    document.documentElement.style.setProperty('--opacity', 0.5);
+    document.documentElement.style.setProperty('--opacity', 0.8);
   } else {
     document.documentElement.style.setProperty('--opacity', 0);
   }

@@ -336,9 +336,9 @@ html {
 }
 
 .header {
-  font-family: Cormorant;
+  font-family: Nunito;
   transition: 0.3s;
-  background: rgba(41, 49, 51, var(--opacity));
+  background: rgba(0, 0, 0, var(--opacity));
   position: fixed;
   top: 0;
   left: 0;
@@ -395,7 +395,7 @@ html {
   padding: 15px;
   transform: translateX(-100%);
   transition: transform 0.5s;
-  background: rgba(0, 0, 0, 0.85);
+  background: #000;
 }
 .header__body.active {
   transform: translateX(0);
@@ -436,7 +436,7 @@ html {
   align-items: center;
   font-size: 28px;
   margin-bottom: 15px;
-  font-family: Sen;
+  font-family: Nunito;
 }
 @media (max-width: 768px) {
   .header__contact {
@@ -775,29 +775,27 @@ html {
 }
 .render .owl-nav .owl-prev {
   background: none !important;
-  transform: translateY(-1.5px);
-  margin-left: 50px;
+  margin-left: -115px;
 }
 .render .owl-nav .owl-prev::before {
   width: 50px;
   height: 20px;
   color: #fff;
   font-size: 40px;
-  content: "➜";
+  content: "←";
 }
 .render .owl-nav .owl-prev span {
   display: none;
 }
 .render .owl-nav .owl-next {
   background: none !important;
-  transform: rotate(180deg);
 }
 .render .owl-nav .owl-next::before {
   width: 50px;
   height: 20px;
   color: #fff;
   font-size: 40px;
-  content: "➜";
+  content: "→";
 }
 .render__item {
   margin: 0 25px;
@@ -1023,7 +1021,7 @@ html {
   margin-bottom: 15px;
 }
 .plus__item h3 {
-  font-family: "Cormorant";
+  font-family: "Nunito";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1039,7 +1037,7 @@ html {
   }
 }
 .plus .plus__block .plus__item:nth-child(2) h3 {
-  max-width: 160px;
+  max-width: 170px;
 }
 .plus .plus__item:nth-child(4) h3 {
   max-width: 131px;
@@ -1055,7 +1053,7 @@ html {
   }
 }
 .plus .plus__block .plus__item {
-  width: 160px;
+  width: 180px;
   margin-bottom: 0;
 }
 
@@ -1184,27 +1182,3 @@ html {
   border-width: 0;
   outline-width: 0;
 }/*# sourceMappingURL=style.css.map */
-
-/* ScrollBar */
-::-webkit-scrollbar-button {
-  background-repeat:no-repeat;
-  width:6px;
-  height:0px
-}
-
-::-webkit-scrollbar-track {
-  background-color:#fff;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 5px;
-  border-radius: 3px;
-  background-color:#c9cfcb;
-  box-shadow:0px 1px 1px #fff inset;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-
-::-webkit-scrollbar{
-  width: 7px;
-}

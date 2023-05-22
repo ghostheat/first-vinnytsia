@@ -122,9 +122,9 @@ html {
 }
 
 .header {
-  font-family: Cormorant;
+  font-family: Nunito;
   transition: 0.3s;
-  background: rgba(41, 49, 51, var(--opacity));
+  background: rgba(0,0,0, var(--opacity));
   position: fixed;
   top: 0;
   left: 0;
@@ -192,7 +192,7 @@ html {
     padding: 15px;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    background: rgba(0, 0, 0, 0.85);
+    background: #000;
 
     &.active {
       transform: translateX(0);
@@ -241,7 +241,7 @@ html {
     align-items: center;
     font-size: 28px;
     margin-bottom: 15px;
-    font-family: Sen;
+    font-family: Nunito;
 
     @media (max-width: 768px) {
       font-size: 18px;
@@ -603,15 +603,14 @@ html {
 
     .owl-prev {
       background: none !important;
-      transform: translateY(-1.5px);
-      margin-left: 50px;
+      margin-left: -115px;
 
       &::before {
         width: 50px;
         height: 20px;
         color: #fff;
         font-size: 40px;
-        content: "➜";
+        content: "←";
       }
 
       span {
@@ -621,14 +620,13 @@ html {
 
     .owl-next {
       background: none !important;
-      transform: rotate(180deg);
 
       &::before {
         width: 50px;
         height: 20px;
         color: #fff;
         font-size: 40px;
-        content: "➜";
+        content: "→";
       }
     }
   }
@@ -927,7 +925,7 @@ html {
     }
 
     h3 {
-      font-family: "Cormorant";
+      font-family: "Nunito";
       font-weight: 700;
       font-size: 20px;
       line-height: 24px;
@@ -947,7 +945,7 @@ html {
 
   .plus__block .plus__item:nth-child(2) {
     h3 {
-      max-width: 160px;
+      max-width: 170px;
     }
 
   }
@@ -970,7 +968,7 @@ html {
     }
 
     .plus__item {
-      width: 160px;
+      width: 180px;
       margin-bottom: 0;
     }
   }
