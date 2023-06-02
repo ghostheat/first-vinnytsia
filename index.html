@@ -1,447 +1,832 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>TownHouse</title>
-    <link rel="stylesheet" href="source/scss/style.css">
-    <link rel="stylesheet" href="source/scss/owl.carousel.min.css">
-    <link rel="stylesheet" href="source/scss/owl.theme.default.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <link rel="stylesheet" href="source/scss/style.css" />
+    <link rel="stylesheet" href="source/scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="source/scss/owl.theme.default.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__menu-wrap">
+      <div class="container">
+        <div class="header__menu-wrap">
+          <div class="header__burger">
+            <img loading="lazy" class="default" src="img/menu.png" alt="menu" />
+            <img
+              loading="lazy"
+              class="menu__active"
+              src="img/menu_active.png"
+              alt=""
+            />
+          </div>
 
-                <div class="header__burger">
-                    <img loading="lazy" class="default" src="img/menu.png" alt="menu">
-                    <img loading="lazy" class="menu__active" src="img/menu_active.png" alt="">
-                </div>
+          <div class="header__logo">
+            <a href="/"
+              ><img
+                loading="lazy"
+                src="img/header__logo.png"
+                alt="logo"
+                width="83px"
+                height="111px"
+            /></a>
+          </div>
 
-
-
-                <div class="header__logo">
-                    <a href="/"><img loading="lazy" src="img/header__logo.png" alt="logo" width="83px" height="111px"></a>
-                </div>
-
-                <div></div>
-            </div>
-            <div class="header__body">
-                <div class="header__logo-menu">
-                    <a href="/"><img loading="lazy" src="img/header__logo.png" alt="logo" width="113px" height="141px"></a>
-                </div>
-                <ul class="header__menu">
-                    <li class="item__menu"><a href="#sell">Про проєкт</a></li>
-                    <li class="item__menu"><a href="#plus">Переваги</a></li>
-                    <li class="item__menu"><a href="#plan">Планування</a></li>
-                    <li class="item__menu"><a href="#contact">Контакти</a></li>
-                </ul>
-                <div class="header__contact item__menu">
-                    <a href="tel:+380733700001">+380 (73) 370 0001</a>
-                </div>
-            </div>
+          <div></div>
         </div>
+        <div class="header__body">
+          <div class="header__logo-menu">
+            <a href="/"
+              ><img
+                loading="lazy"
+                src="img/header__logo.png"
+                alt="logo"
+                width="113px"
+                height="141px"
+            /></a>
+          </div>
+          <ul class="header__menu">
+            <li class="item__menu"><a href="#sell">Про проєкт</a></li>
+            <li class="item__menu"><a href="#plus">Переваги</a></li>
+            <li class="item__menu"><a href="#plan">Планування</a></li>
+            <li class="item__menu"><a href="#contact">Контакти</a></li>
+          </ul>
+          <div class="header__contact item__menu">
+            <a href="tel:+380733700001">+380 (73) 370 0001</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="banner">
-            <div class="container">
-                <div class="banner__body">
-                    <h1><span>СУЧАСНІ</span> ТАУНХАУСИ <span>ПРЕМІУМ</span> КЛАСУ</h1>
-                    <a href="#plan" class="arrows">
-                        <span>обрати будинок</span>
-                        <div class="arrow arrow-first"></div>
-                    </a>
-                </div>
+      <section class="banner">
+        <div class="container">
+          <div class="banner__body">
+            <h1><span>СУЧАСНІ</span> ТАУНХАУСИ <span>ПРЕМІУМ</span> КЛАСУ</h1>
+            <a href="#plan" class="arrows">
+              <span>обрати будинок</span>
+              <div class="arrow arrow-first"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="render" id="sell">
+        <div class="render__body">
+          <h2 class="render__title">
+            FIRST — ВТІЛЕННЯ СУЧАСНОСТІ У ЗАТИШНОМУ МІСЦІ БІЛЯ БЕРЕГУ ПІВДЕННОГО
+            БУГУ.
+          </h2>
+
+          <p class="render__text">
+            Нашою унікальністю є продумані до дрібниць планування, власні тераси
+            із дерев’яними перголами, величезні вікна із термопоглинаючим склом
+            та найвища якість будівництва на ринку. Тиша і спокій у семи
+            хвилинах від центру Вінниці, закрита територія комплексу і хвилинна
+            доступність до Південного Бугу — це те, що робить власників житла
+            “FIRST” особливими.
+          </p>
+          <div class="owl-carousel">
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl1.jpeg" />
             </div>
-        </section>
-
-
-
-
-        <section class="render" id="sell">
-            <div class="render__body">
-                <h2 class="render__title">FIRST — ВТІЛЕННЯ СУЧАСНОСТІ У ЗАТИШНОМУ
-                    МІСЦІ БІЛЯ БЕРЕГУ ПІВДЕННОГО БУГУ.</h2>
-
-                <p class="render__text">Нашою унікальністю є продумані до дрібниць планування, власні тераси
-                    із дерев’яними перголами, величезні вікна із термопоглинаючим склом
-                    та найвища якість будівництва на ринку. Тиша і спокій у семи хвилинах
-                    від центру Вінниці, закрита територія комплексу і хвилинна доступність
-                    до Південного Бугу — це те, що робить власників житла “FIRST” особливими.</p>
-                <div class="owl-carousel">
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl1.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl2.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl3.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl4.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl5.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl6.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl7.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl8.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl9.jpeg"> </div>
-                    <div class="render__item"> <img loading="lazy" src="img/slider/sl10.jpeg"> </div>
-                </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl2.jpeg" />
             </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl3.jpeg" />
             </div>
-        </section>
-
-
-        <section class="plus" id="plus">
-            <div class="container">
-                <div class="plus__body">
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_1.png" alt="plus">
-                        <h3>сучасний дизайн</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_2.png" alt="plus">
-                        <h3>технологічність</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_3.png" alt="plus">
-                        <h3>інновації будівництва</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_4.png" alt="plus">
-                        <h3>матеріали
-                            преміум класу</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_5.png" alt="plus">
-                        <h3>ергономіка планувань</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_6.png" alt="plus">
-                        <h3>власна ділянка землі</h3>
-                    </div>
-                    <div class="plus__item none-desktop">
-                        <img loading="lazy" src="img/plus_7.png" alt="plus">
-                        <h3>панорамні вікна</h3>
-                    </div>
-                    <div class="plus__item none-desktop">
-                        <img loading="lazy" src="img/plus_8.png" alt="plus">
-                        <h3>закрита територія комплексу</h3>
-                    </div>
-                </div>
-                <div class="plus__block">
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_7.png" alt="plus">
-                        <h3>панорамні вікна</h3>
-                    </div>
-                    <div class="plus__item">
-                        <img loading="lazy" src="img/plus_8.png" alt="plus">
-                        <h3>закрита територія комплексу</h3>
-                    </div>
-                </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl4.jpeg" />
             </div>
-        </section>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl5.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl6.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl7.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl8.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl9.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl10.jpeg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl11.jpg" />
+            </div>
+            <div class="render__item">
+              <img loading="lazy" src="img/slider/sl12.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="plus" id="plus">
+        <div class="container">
+          <div class="plus__body">
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_1.png" alt="plus" />
+              <h3>сучасний дизайн</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_2.png" alt="plus" />
+              <h3>технологічність</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_3.png" alt="plus" />
+              <h3>інновації будівництва</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_4.png" alt="plus" />
+              <h3>преміум матеріали</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_5.png" alt="plus" />
+              <h3>ергономіка планувань</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_6.png" alt="plus" />
+              <h3>власна ділянка</h3>
+            </div>
+            <div class="plus__item none-desktop">
+              <img loading="lazy" src="img/plus_7.png" alt="plus" />
+              <h3>панорамні вікна</h3>
+            </div>
+            <div class="plus__item none-desktop">
+              <img loading="lazy" src="img/plus_8.png" alt="plus" />
+              <h3>закрита територія</h3>
+            </div>
+          </div>
+          <div class="plus__block">
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_7.png" alt="plus" />
+              <h3>панорамні вікна</h3>
+            </div>
+            <div class="plus__item">
+              <img loading="lazy" src="img/plus_8.png" alt="plus" />
+              <h3>закрита територія</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="plan" id="plan">
-            <div class="container">
-                <div class="plan__body">
-                    <div class="plan__item">
-                        <a class="details" id="btn_modal_window">
-                            <div>
-                                <div class="plan__image">
-                                    <img loading="lazy" src="img/plan_a.png" alt="">
+      <section class="plan" id="plan">
+        <div class="container">
+          <div class="plan__body">
+            <div class="plan__item">
+              <label
+                class="modal-window-open modal-window-label"
+                for="modal-window-open"
+              >
+                <a
+                  class="details modal-window-open modal-window-label"
+                  for="modal-window-open"
+                >
+                  <div>
+                    <div class="plan__image">
+                      <img loading="lazy" src="img/plan_a.png" alt="" />
 
-                                    <div class="plan__text">
-                                        <div class="plan__text-title">
-                                            <span class="type-title">A</span> <span class="type-text">Тип</span>
-                                        </div>
-                                        <span class="square">146 m<sup> 2</sup></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="my_modal" class="modal">
-                            <div class="modal__wrapper">
-                                <div class="modal__body">
-                                    <div class="modal__slider owl-carousel">
-                                        <img loading="lazy" src="img/HA1.jpg" alt="/">
-                                        <img loading="lazy" src="img/HA3.jpg" alt="/">
-                                        <img loading="lazy" src="img/HA2.jpg" alt="/">
-                                        <img loading="lazy" src="img/A1.png" alt="/">
-                                        <img loading="lazy" src="img/A2.png" alt="/">
-                                        <img loading="lazy" src="img/A3.png" alt="/">
-                                    </div>
-                                    <div class="modal__text">
-                                        <h3 class="mb30">Будинок тип А</h3>
-                                        <h3>S = 146 m<sup>2</sup></h3>
-                                        <p class="mb30">З власним двором і терасою</p>
-                                        <div class="char__block">
-                                            <h3>Фундамент:</h3>
-                                            <p>збірно-монолітний</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Зовнішні стіни:</h3>
-                                            <p>цегла керамічна 380мм</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Дах:</h3>
-                                            <p>плоска крівля , ПВХ мембрана із 250мм утеплювачом</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Вікна:</h3>
-                                            <p>німецький Salamander енергозберегаючі</p>
-                                        </div>
-                                        <div class="char__block mb30">
-                                            <h3>Фасад будинку:</h3>
-                                            <p>декоративна штукатурка з імітацією бетону + термодерево</p>
-                                        </div>
-                                    </div>
-                                    <div class="close close_modal_window">
-                                    </div>
-                                </div>
-
-                            </div>
-
+                      <div class="plan__text">
+                        <div class="plan__text-title">
+                          <span class="type-title">A</span>
+                          <span class="type-text">Тип</span>
                         </div>
+                        <span class="square">146 m<sup> 2</sup></span>
+                      </div>
                     </div>
-                    <div class="plan__item">
-                        <a class="details" id="btn_modal_window2">
-                            <div>
-                                <div class="plan__image">
-                                    <img loading="lazy" src="img/plan_b.png">
+                  </div>
+                </a>
+              </label>
+              <input
+                type="radio"
+                name="modal-window"
+                value="open"
+                id="modal-window-open"
+                class="modal-window-radio"
+              />
+              <div class="modal-window">
+                <label class="modal-window-label overlay">
+                  <input
+                    type="radio"
+                    name="modal-window"
+                    value="close"
+                    class="modal-window-radio"
+                  />
+                </label>
+                <div class="content">
+                  <div class="modal__wrapper">
+                    <div class="modal__body">
+                      <label class="modal-window-label close-btn">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="close"
+                          class="modal-window-radio"
+                        />
+                      </label>
 
-                                    <div class="plan__text">
-                                        <div class="plan__text-title">
-                                            <span class="type-title">B</span> <span class="type-text">Тип</span>
-                                        </div>
-                                        <span class="square">169 m<sup> 2</sup></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="my_modal2" class="modal">
-                            <div class="modal__wrapper">
-                                <div class="modal__body">
-                                    <div class="modal__slider owl-carousel">
-                                        <img loading="lazy" src="img/HB1.jpg" alt="/">
-                                        <img loading="lazy" src="img/HB2.jpg" alt="/">
-                                        <img loading="lazy" src="img/HB3.jpg" alt="/">
-                                        <img loading="lazy" src="img/HB4.jpg" alt="/">
-                                        <img loading="lazy" src="img/B1.png">
-                                        <img loading="lazy" src="img/B2.png">
-                                        <img loading="lazy" src="img/B3.png">
-                                    </div>
-                                    <div class="modal__text">
-                                        <h3 class="mb30">Будинок тип B</h3>
-                                        <h3>S = 169 m<sup>2</sup></h3>
-                                        <p class="mb30">З власним двором і терасою</p>
-                                        <div class="char__block">
-                                            <h3>Фундамент:</h3>
-                                            <p>збірно-монолітний</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Зовнішні стіни:</h3>
-                                            <p>цегла керамічна 380мм</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Дах:</h3>
-                                            <p>плоска крівля , ПВХ мембрана із 250мм утеплювачом</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Вікна:</h3>
-                                            <p>німецький Salamander енергозберегаючі</p>
-                                        </div>
-                                        <div class="char__block mb30">
-                                            <h3>Фасад будинку:</h3>
-                                            <p>декоративна штукатурка з імітацією бетону + термодерево</p>
-                                        </div>
-                                    </div>
-                                    <div class="close_modal_window2 close">
-                                    </div>
-                                </div>
-
-                            </div>
-
+                      <div class="slider" id="slider1">
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <img src="img/HA1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HA2.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HA3.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/A1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/A2.jpg" alt="/" />
+                          </div>
+                          <a
+                            class="modal-owl-prev"
+                            onclick="plusSlides('slider1', -1)"
+                            >❮</a
+                          >
+                          <a
+                            class="modal-owl-next"
+                            onclick="plusSlides('slider1', 1)"
+                            >❯</a
+                          >
                         </div>
-                    </div>
-                    <div class="plan__item">
-                        <a class="details" id="btn_modal_window3">
-                            <div>
-                                <div class="plan__image">
-                                    <img loading="lazy" src="img/plan_c.png">
-
-                                    <div class="plan__text">
-                                        <div class="plan__text-title">
-                                            <span class="type-title">C</span> <span class="type-text">Тип</span>
-                                        </div>
-                                        <span class="square">169 m<sup> 2</sup></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="my_modal3" class="modal">
-                            <div class="modal__wrapper">
-                                <div class="modal__body">
-                                    <div class="modal__slider owl-carousel">
-                                        <img loading="lazy" src="img/HC1.jpg" alt="/">
-                                        <img loading="lazy" src="img/HC2.jpg" alt="/">
-                                        <img loading="lazy" src="img/HC3.jpg" alt="/">
-                                        <img loading="lazy" src="img/C1.png">
-                                        <img loading="lazy" src="img/C2.png">
-                                        <img loading="lazy" src="img/C3.png">
-                                    </div>
-                                    <div class="modal__text">
-                                        <h3 class="mb30">Будинок тип C</h3>
-                                        <h3>S = 169  m<sup>2</sup></h3>
-                                        <p class="mb30">З власним двором і терасою</p>
-                                        <div class="char__block">
-                                            <h3>Фундамент:</h3>
-                                            <p>збірно-монолітний</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Зовнішні стіни:</h3>
-                                            <p>цегла керамічна 380мм</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Дах:</h3>
-                                            <p>плоска крівля , ПВХ мембрана із 250мм утеплювачом</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Вікна:</h3>
-                                            <p>німецький Salamander енергозберегаючі</p>
-                                        </div>
-                                        <div class="char__block mb30">
-                                            <h3>Фасад будинку:</h3>
-                                            <p>декоративна штукатурка з імітацією бетону + термодерево</p>
-                                        </div>
-                                    </div>
-                                    <div class="close_modal_window3 close">
-                                    </div>
-                                </div>
-
-                            </div>
-
+                        <div class="dots">
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider1', 1)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider1', 2)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider1', 3)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider1', 4)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider1', 5)"
+                          ></span>
                         </div>
-                    </div>
-                    <div class="plan__item">
-                        <a class="details" id="btn_modal_window4">
-                            <div>
-                                <div class="plan__image">
-                                    <img loading="lazy" src="img/plan_d.png" alt="">
+                      </div>
 
-                                    <div class="plan__text">
-                                        <div class="plan__text-title">
-                                            <span class="type-title">D</span> <span class="type-text">Тип</span>
-                                        </div>
-                                        <span class="square">173 m<sup> 2</sup></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="my_modal4" class="modal">
-                            <div class="modal__wrapper">
-                                <div class="modal__body">
-                                    <div class="modal__slider owl-carousel">
-                                        <img loading="lazy" src="img/HD1.jpg" alt="/">
-                                        <img loading="lazy" src="img/HD2.jpg" alt="/">
-                                        <img loading="lazy" src="img/HD3.jpg" alt="/">
-                                        <img loading="lazy" src="img/D1.png" alt="">
-                                        <img loading="lazy" src="img/D2.png" alt="">
-                                        <img loading="lazy" src="img/D3.png" alt="">
-                                    </div>
-                                    <div class="modal__text">
-                                        <h3 class="mb30">Будинок тип D</h3>
-                                        <h3>S = 173 m<sup>2</sup></h3>
-                                        <p class="mb30">З власним двором і терасою</p>
-                                        <div class="char__block">
-                                            <h3>Фундамент:</h3>
-                                            <p>збірно-монолітний</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Зовнішні стіни:</h3>
-                                            <p>цегла керамічна 380мм</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Дах:</h3>
-                                            <p>плоска крівля , ПВХ мембрана із 250мм утеплювачом</p>
-                                        </div>
-                                        <div class="char__block">
-                                            <h3>Вікна:</h3>
-                                            <p>німецький Salamander енергозберегаючі</p>
-                                        </div>
-                                        <div class="char__block mb30">
-                                            <h3>Фасад будинку:</h3>
-                                            <p>декоративна штукатурка з імітацією бетону + термодерево</p>
-                                        </div>
-                                    </div>
-                                    <div class="close_modal_window4 close">
-                                    </div>
-                                </div>
-
-                            </div>
-
+                      <div class="modal__text">
+                        <h3 class="mb30">Будинок тип А</h3>
+                        <h3>S = 146 m<sup>2</sup></h3>
+                        <p class="mb30">З власним двором і терасою</p>
+                        <div class="char__block">
+                          <h3>Фундамент:</h3>
+                          <p>збірно-монолітний</p>
                         </div>
+                        <div class="char__block">
+                          <h3>Зовнішні стіни:</h3>
+                          <p>цегла керамічна 380мм</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Дах:</h3>
+                          <p>
+                            плоска крівля , ПВХ мембрана із 250мм утеплювачом
+                          </p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Вікна:</h3>
+                          <p>німецький Salamander енергозберегаючі</p>
+                        </div>
+                        <div class="char__block mb30">
+                          <h3>Фасад будинку:</h3>
+                          <p>
+                            декоративна штукатурка з імітацією бетону +
+                            термодерево
+                          </p>
+                        </div>
+                      </div>
+                      <div class="close_modal_window">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="open"
+                          id="modal-window-open"
+                          class="modal-window-radio"
+                        />
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
+            <div class="plan__item">
+              <label
+                class="modal-window-open modal-window-label"
+                for="modal-window-open2"
+              >
+                <a
+                  class="details modal-window-open modal-window-label"
+                  for="modal-window-open"
+                >
+                  <div>
+                    <div class="plan__image">
+                      <img loading="lazy" src="img/plan_b.png" />
 
+                      <div class="plan__text">
+                        <div class="plan__text-title">
+                          <span class="type-title">B</span>
+                          <span class="type-text">Тип</span>
+                        </div>
+                        <span class="square">169 m<sup> 2</sup></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </label>
+              <input
+                type="radio"
+                name="modal-window"
+                value="open"
+                id="modal-window-open2"
+                class="modal-window-radio"
+              />
+              <div class="modal-window modal-window2">
+                <label class="modal-window-label overlay">
+                  <input
+                    type="radio"
+                    name="modal-window"
+                    value="close"
+                    class="modal-window-radio"
+                  />
+                </label>
+                <div class="content">
+                  <div class="modal__wrapper">
+                    <div class="modal__body">
+                      <label class="modal-window-label close-btn">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="close"
+                          class="modal-window-radio"
+                        />
+                      </label>
 
+                      <div class="slider" id="slider2">
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <img src="img/HB1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HB2.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HB3.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/B1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/B2.jpg" alt="/" />
+                          </div>
+                          <a
+                            class="modal-owl-prev"
+                            onclick="plusSlides('slider2', -1)"
+                            >❮</a
+                          >
+                          <a
+                            class="modal-owl-next"
+                            onclick="plusSlides('slider2', 1)"
+                            >❯</a
+                          >
+                        </div>
+                        <div class="dots">
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider2', 1)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider2', 2)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider2', 3)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider2', 4)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider2', 5)"
+                          ></span>
+                        </div>
+                      </div>
 
-
-
-
-
-        <!-- <section class="call">
-            <div class="container">
-                <div class="call__body">
-                    <h2 class="call__title">
-                        Замовити зворотній дзвінок
-                    </h2>
-                    <h3 class="call__subtitle">
-                        Ваш персональний консультант з нерухомості зв'яжеться з Вами найближчим часом!
-                    </h3>
-
-                    <form class="input__form" action="/">
-                        <input type="text" placeholder="+380984755555">
-                        <button type="submit">Відправити</button>
-                    </form>
+                      <div class="modal__text">
+                        <h3 class="mb30">Будинок тип B</h3>
+                        <h3>S = 169 m<sup>2</sup></h3>
+                        <p class="mb30">З власним двором і терасою</p>
+                        <div class="char__block">
+                          <h3>Фундамент:</h3>
+                          <p>збірно-монолітний</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Зовнішні стіни:</h3>
+                          <p>цегла керамічна 380мм</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Дах:</h3>
+                          <p>
+                            плоска крівля , ПВХ мембрана із 250мм утеплювачом
+                          </p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Вікна:</h3>
+                          <p>німецький Salamander енергозберегаючі</p>
+                        </div>
+                        <div class="char__block mb30">
+                          <h3>Фасад будинку:</h3>
+                          <p>
+                            декоративна штукатурка з імітацією бетону +
+                            термодерево
+                          </p>
+                        </div>
+                      </div>
+                      <div class="close_modal_window2">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="open"
+                          id="modal-window-open"
+                          class="modal-window-radio"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section> -->
 
+            <div class="plan__item">
+              <label
+                class="modal-window-open modal-window-label"
+                for="modal-window-open3"
+              >
+                <a
+                  class="details modal-window-open modal-window-label"
+                  for="modal-window-open"
+                >
+                  <div>
+                    <div class="plan__image">
+                      <img loading="lazy" src="img/plan_c.png" />
+
+                      <div class="plan__text">
+                        <div class="plan__text-title">
+                          <span class="type-title">C</span>
+                          <span class="type-text">Тип</span>
+                        </div>
+                        <span class="square">169 m<sup> 2</sup></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </label>
+              <input
+                type="radio"
+                name="modal-window"
+                value="open"
+                id="modal-window-open3"
+                class="modal-window-radio"
+              />
+              <div class="modal-window modal-window3">
+                <label class="modal-window-label overlay">
+                  <input
+                    type="radio"
+                    name="modal-window"
+                    value="close"
+                    class="modal-window-radio"
+                  />
+                </label>
+                <div class="content">
+                  <div class="modal__wrapper">
+                    <div class="modal__body">
+                      <label class="modal-window-label close-btn">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="close"
+                          class="modal-window-radio"
+                        />
+                      </label>
+
+                      <div class="slider" id="slider3">
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <img src="img/HC1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HC2.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HC3.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/C1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/C2.jpg" alt="/" />
+                          </div>
+                          <a
+                            class="modal-owl-prev"
+                            onclick="plusSlides('slider3', -1)"
+                            >❮</a
+                          >
+                          <a
+                            class="modal-owl-next"
+                            onclick="plusSlides('slider3', 1)"
+                            >❯</a
+                          >
+                        </div>
+                        <div class="dots">
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider3', 1)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider3', 2)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider3', 3)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider3', 4)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider3', 5)"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="modal__text">
+                        <h3 class="mb30">Будинок тип C</h3>
+                        <h3>S = 169 m<sup>2</sup></h3>
+                        <p class="mb30">З власним двором і терасою</p>
+                        <div class="char__block">
+                          <h3>Фундамент:</h3>
+                          <p>збірно-монолітний</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Зовнішні стіни:</h3>
+                          <p>цегла керамічна 380мм</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Дах:</h3>
+                          <p>
+                            плоска крівля , ПВХ мембрана із 250мм утеплювачом
+                          </p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Вікна:</h3>
+                          <p>німецький Salamander енергозберегаючі</p>
+                        </div>
+                        <div class="char__block mb30">
+                          <h3>Фасад будинку:</h3>
+                          <p>
+                            декоративна штукатурка з імітацією бетону +
+                            термодерево
+                          </p>
+                        </div>
+                      </div>
+                      <div class="close_modal_window3">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="open"
+                          id="modal-window-open"
+                          class="modal-window-radio"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan__item">
+              <label
+                class="modal-window-open modal-window-label"
+                for="modal-window-open4"
+              >
+                <a
+                  class="details modal-window-open modal-window-label"
+                  for="modal-window-open"
+                >
+                  <div>
+                    <div class="plan__image">
+                      <img loading="lazy" src="img/plan_d.png" />
+
+                      <div class="plan__text">
+                        <div class="plan__text-title">
+                          <span class="type-title">D</span>
+                          <span class="type-text">Тип</span>
+                        </div>
+                        <span class="square">173 m<sup> 2</sup></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </label>
+              <input
+                type="radio"
+                name="modal-window"
+                value="open"
+                id="modal-window-open4"
+                class="modal-window-radio"
+              />
+              <div class="modal-window modal-window4">
+                <label class="modal-window-label overlay">
+                  <input
+                    type="radio"
+                    name="modal-window"
+                    value="close"
+                    class="modal-window-radio"
+                  />
+                </label>
+                <div class="content">
+                  <div class="modal__wrapper">
+                    <div class="modal__body">
+                      <label class="modal-window-label close-btn">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="close"
+                          class="modal-window-radio"
+                        />
+                      </label>
+                      <div class="slider" id="slider4">
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <img src="img/HD1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HD2.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/HD3.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/D1.jpg" alt="/" />
+                          </div>
+                          <div class="mySlides fade">
+                            <img src="img/D2.jpg" alt="/" />
+                          </div>
+                          <a
+                            class="modal-owl-prev"
+                            onclick="plusSlides('slider4', -1)"
+                            >❮</a
+                          >
+                          <a
+                            class="modal-owl-next"
+                            onclick="plusSlides('slider4', 1)"
+                            >❯</a
+                          >
+                        </div>
+                        <div class="dots">
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider4', 1)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider4', 2)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider4', 3)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider4', 4)"
+                          ></span>
+                          <span
+                            class="dot"
+                            onclick="currentSlide('slider4', 5)"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="modal__text">
+                        <h3 class="mb30">Будинок тип D</h3>
+                        <h3>S = 173 m<sup>2</sup></h3>
+                        <p class="mb30">З власним двором і терасою</p>
+                        <div class="char__block">
+                          <h3>Фундамент:</h3>
+                          <p>збірно-монолітний</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Зовнішні стіни:</h3>
+                          <p>цегла керамічна 380мм</p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Дах:</h3>
+                          <p>
+                            плоска крівля , ПВХ мембрана із 250мм утеплювачом
+                          </p>
+                        </div>
+                        <div class="char__block">
+                          <h3>Вікна:</h3>
+                          <p>німецький Salamander енергозберегаючі</p>
+                        </div>
+                        <div class="char__block mb30">
+                          <h3>Фасад будинку:</h3>
+                          <p>
+                            декоративна штукатурка з імітацією бетону +
+                            термодерево
+                          </p>
+                        </div>
+                      </div>
+                      <div class="close_modal_window4">
+                        <input
+                          type="radio"
+                          name="modal-window"
+                          value="open"
+                          id="modal-window-open"
+                          class="modal-window-radio"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__body">
-            <div class="footer__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d8198.8861307764!2d28.461965!3d49.214436!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDEyJzUyLjAiTiAyOMKwMjcnNDMuMSJF!5e1!3m2!1suk!2sua!4v1683834605515!5m2!1suk!2sua"
-                    width="445px" height="445px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="footer__contact" id="contact">
-                <h2 class="footer__title">Звʼяжіться з нами <br>
-                    зручним Вам способом</h2>
-
-                    <div class="footer__icons">
-                <a target="_blank" href="https://www.instagram.com/">
-                    <img loading="lazy" src="img/icons/f1.png">
-                </a>
-                <a  target="_blank" href="https://www.facebook.com/"> <img loading="lazy" src="img/icons/f2.png"></a>
-                <a class="mail" href="mailto: firstvinnytsia@gmail.com"> <img loading="lazy" src="img/icons/f3.png"></a>
-                <a href="tel:+380733700001"> <img loading="lazy" src="img/icons/f4.png"></a>
-                <a  target="_blank" href="https://www.google.com/maps/place/49%C2%B012'52.0%22N+28%C2%B027'43.1%22E/@49.214436,28.461965,3603m/data=!3m1!1e3!4m4!3m3!8m2!3d49.2144444!4d28.4619722?hl=uk"> <img loading="lazy" src="img/icons/f5.png"></a>
-            </div>
-            </div>
+      <div class="footer__body">
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d8198.8861307764!2d28.461965!3d49.214436!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDEyJzUyLjAiTiAyOMKwMjcnNDMuMSJF!5e1!3m2!1suk!2sua!4v1683834605515!5m2!1suk!2sua"
+            width="445px"
+            height="445px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+        <div class="footer__contact" id="contact">
+          <h2 class="footer__title">
+            Звʼяжіться з нами <br />
+            зручним Вам способом
+          </h2>
+
+          <div class="footer__icons">
+            <a
+              target="_blank"
+              href="https://instagram.com/firstvinnytsia?igshid=ZWQyN2ExYTkwZQ=="
+            >
+              <img loading="lazy" src="img/icons/f1.png" />
+            </a>
+            <a class="mail" href="mailto: firstvinnytsia@gmail.com">
+              <img loading="lazy" src="img/icons/f3.png"
+            /></a>
+            <a href="tel:+380733700001">
+              <img loading="lazy" src="img/icons/f4.png"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/49%C2%B012'52.0%22N+28%C2%B027'43.1%22E/@49.214436,28.461965,3603m/data=!3m1!1e3!4m4!3m3!8m2!3d49.2144444!4d28.4619722?hl=uk"
+            >
+              <img loading="lazy" src="img/icons/f5.png"
+            /></a>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
 
     <script src="source/js/jquery.js"></script>
     <script src="source/js/owl.carousel.js"></script>
+    <script src="source/js/slider.js"></script>
+    <script src="source/js/zoom.js"></script>
     <script src="source/js/script.js"></script>
-
-
-</body>
-
+  </body>
 </html>
