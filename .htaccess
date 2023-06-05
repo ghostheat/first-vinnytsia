@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* - [E=Cache-Control:max-age=604800]
