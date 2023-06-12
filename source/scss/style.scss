@@ -1363,6 +1363,10 @@ html {
     content: '2';
     position: absolute;
     font-size: 30px;
+
+    @media (max-width: 668px) {
+      font-size: 14px;
+    }
   }
 }
 

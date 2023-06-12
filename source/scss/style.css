@@ -1455,6 +1455,11 @@ html {
   position: absolute;
   font-size: 30px;
 }
+@media (max-width: 668px) {
+  .first_renred::after {
+    font-size: 14px;
+  }
+}
 
 .zoomed-img {
   position: fixed;
