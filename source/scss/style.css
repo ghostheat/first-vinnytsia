@@ -568,6 +568,124 @@ html {
   }
 }
 
+.video-bg {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.effects {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+}
+.video-bg__content {
+  z-index: 2;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.video-bg h1 {
+  font-size: 72px;
+  margin-bottom: 35px;
+  font-family: "Nunito";
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .video-bg h1 {
+    font-size: 30px;
+  }
+}
+.video-bg h2 {
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .video-bg h2 {
+    font-size: 14px;
+  }
+}
+.video-bg .arrows {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  bottom: -30px;
+}
+.video-bg .arrows span {
+  font-family: Nunito;
+  display: block;
+  padding-bottom: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.video-bg .arrow {
+  opacity: 0;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(30px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+.video-bg .arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+.video-bg .arrow:before,
+.video-bg .arrow:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+.video-bg .arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+.video-bg .arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@media screen and (max-width: 560px) {
+  .banner {
+    display: none;
+  }
+  .video-bg {
+    display: flex;
+  }
+}
+
 .main__title {
   font-size: 42px;
   line-height: 1.2;
